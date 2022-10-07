@@ -1,0 +1,22 @@
+/**
+Index: Login
+ */
+
+.auth-column,
+.auth-row {
+  min-height: 100vh;
+  height: 100%;
+}
+.auth-column-form form {
+  max-width: 400px;
+  width: 100%;
+}
+.auth-column-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.auth-column-right {
+  background-size: 90% !important;
+  background-color: #fffdfa;
+}

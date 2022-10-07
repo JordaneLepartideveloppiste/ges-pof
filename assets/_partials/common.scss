@@ -1,0 +1,70 @@
+/**
+Typography
+ */
+
+h1 {
+  font-size: 1.5rem;
+}
+
+/**
+Layouts
+ */
+
+@media only screen and (min-width: 768px) {
+  body#default-layout {
+    background-color: $color-grey-light;
+
+    main.el-main {
+      margin-left: $sidemenu-width;
+    }
+
+    main.el-main {
+      padding-top: 90px;
+    }
+  }
+  body#settings-layout {
+    main.el-main {
+      padding-top: 30px;
+    }
+  }
+  body#settings-layout main.el-main {
+    margin-left: $sidemenu-width;
+  }
+}
+
+/**
+Icons
+*/
+
+.z-icon-container {
+  padding: 8px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: $shadow-large;
+  margin-right: 15px;
+  color: $color-primary;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.warning {
+    color: $color-warning;
+  }
+
+  &.danger {
+    color: $color-danger;
+  }
+
+  &.success {
+    color: $color-success;
+  }
+  &.brand {
+    color: $color-brand;
+  }
+
+  &.center {
+    margin: 0 auto;
+  }
+}

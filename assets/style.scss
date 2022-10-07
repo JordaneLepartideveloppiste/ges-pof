@@ -1,0 +1,41 @@
+@import "_partials/element-variables";
+@import "_partials/variables";
+@import "_partials/usefull";
+@import "_partials/override";
+@import "_partials/common";
+
+/**
+Pages
+ */
+
+@import "_partials/pages/auth";
+
+/**
+Components
+*/
+
+@import "_partials/components/navigation";
+
+/**
+Init
+ */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+h1, h2, h3, h4, h5 {
+  font-family: "Gordita", sans-serif;
+  font-weight: 500;
+}
+.font-gordita {
+  font-family: "Gordita", sans-serif;
+}
+p, a, span {
+  word-break: break-word !important;
+}

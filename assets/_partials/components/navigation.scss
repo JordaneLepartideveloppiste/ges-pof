@@ -1,0 +1,138 @@
+/**
+Sidebar
+ */
+
+.el-aside#sidebar_navigation {
+
+  background-color: $color-dark;
+
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 60px;
+  transition: left 0.4s ease-in-out;
+  z-index: 9;
+  padding-bottom: 60px;
+
+  .el-menu {
+    background-color: transparent;
+    border-right: 0;
+  }
+
+  .side_menu {
+    margin-top: 1em;
+  }
+
+  .nuxt-link-active {
+    * {
+      color: $color-white !important;
+    }
+    color: $color-white !important;
+    border-right: 2px solid $color-white;
+  }
+
+  .el-link {
+    color: $white-opacity;
+    &:hover {
+      color: $color-white;
+      i {
+        color: $color-white
+      }
+    }
+    i {
+      vertical-align: text-bottom !important;
+      font-size: 16px;
+    }
+  }
+
+  .sidebar_header {
+    padding: 0 20px;
+    margin-top: 1.2em;
+  }
+
+  .el-divider--horizontal {
+    width: 80%;
+    margin: 24px auto;
+  }
+
+  .el-menu-item {
+    padding: 0 !important;
+    height: 46px;
+    line-height: 46px;
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
+    a {
+      padding: 0 20px;
+      display: block;
+    }
+  }
+}
+
+#mobile_header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #FFFFFF;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  display: none;
+
+  #icon_menu_trigger {
+    background: transparent;
+    border: 0;
+    padding-left: 0;
+  }
+}
+
+#overlay_sidebar {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+/**
+Top Navigation
+ */
+
+.top-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FFF;
+  box-shadow: $shadow-large;
+  z-index: 10;
+  .el-divider--vertical {
+    margin: 0 18px;
+  }
+}
+
+.top_nav_button + .el-badge__content {
+  top: 5px !important;
+  right: 10px !important;
+}
+
+/**
+Médias
+ */
+
+@media only screen and (max-width: 768px) {
+  .el-aside#sidebar_navigation,
+  .el-aside#settings_sidebar_navigation{
+    left: -260px;
+  }
+  .el-aside#sidebar_navigation.open,
+  .el-aside#settings_sidebar_navigation.open {
+    left: 0;
+  }
+  #mobile_header {
+    display: flex;
+  }
+}
